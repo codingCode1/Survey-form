@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Services Form</title>
+    </head>
+            <!--  h1 and description -->
+            <body>
+        <header>
+            <h1 id="title">Behavioral Therapy Survey Form</h1>
+            <p id="description">Taking the time to make effective assessments</p>
+        </header>
+     
+            <!--form starts-->
+                <form id="survey-form">
+               
+                    <!--enter your name-->
+                    <div class="inquire">
+                        <label id="name-label" for="name">Name</label>
+                        <input id="name" type="text" name="name"  placeholder="Enter your Name" required="" >
+                    </div>
+                    <!--enter your email-->
+                    <div class="inquire">
+                        <label id="email-label" for="email">E-mail</label><br/>
+                        <input id="email" type="email" name="email"  placeholder="Enter a valid email address" required="" >
+                    </div>
+                    <!--enter your age-->
+                    <div class="inquire">
+                        <label id="number-label" for="number">Age (Optional)</label><br/>
+                        <input id="number" type="number" name="age" min="18" max="99" placeholder="Age" >
+                    </div>
+                    <!--1 Select "dropdown" how soon you need the service-->
+                    <div class="inquire">
+                        <p>How soon would you need services to be provided?</p>
+                        <select id="dropdown" name="service" required="">
+                            <option value="" disabled selected>Choose a desired time frame</option>
+                            <option value="Emergency">Emergency</option>
+                            <option value="In two weeks">In two weeks</option>
+                            <option value="One month">One month</option>
+                            <option value="In the next three months">In the next three months</option>
+                            <option value="Only doing research">Only doing research</option>
+                            <option value="Not in a rush">Not in a rush</option>
+                        </select>
+                    </div>
+                    <!--Radio selection part-->
+                    <div class="inquire">
+                        <p>Do you think we offer the services that you need at the moment?</p>
+                        <div>
+                        <label for="myRadio" class="radio">   
+                            <input id="myRadio" type="radio" name="service-match" value="definitely">               
+                              Definitely</label>
+                        </div>
+                        <div>
+                        <label for="myRadio" class="radio">
+                            <input id="myRadio" type="radio" name="service-match" value="maybe">
+                            Maybe</label>
+                        </div>
+                        <div>
+                        <label for="myRadio" class="radio">
+                            <input id="myRadio" type="radio" name="service-match" value="not sure">
+                            Not sure</label>
+                        </div>
+                     </div>
+                     <!-- 2 Selection dropdown menu-->
+                    <div class="inquire">
+                        <p>What kind of professional best suits your needs?</p>
+                        <select id="dropdown" name="service" required="">
+                            <option value="" disabled selected>Select a needed service</option>
+                            <option value="speech therapist">Speech Therapist</option>
+                            <option value="occupational therapist">Occupational Therapist</option>
+                            <option value="behavioral therapist">Behavioral Therapist</option>
+                            <option value="Psychologist">Pyschologist</option>
+                            <option value="Child therapist">Child Therapist</option>
+                            <option value="clinical therapist">Clinical Therapist</option>
+                        </select>
+                    </div>
+                    <!--Checkbox button selection-->
+                    <div class="inquire">
+                        <p>Are there other services you would like to find here? <span id="fits-in-one-line">(check all that apply)</span></p>
+                        <div>
+                            <label for="MyCheckbox" class="checkbox">
+                            <input id="MyCheckbox" type="checkbox" name="find" value="Books">
+                            Books</label>
+                        </div>
+                        <div>
+                            <label for="MyCheckbox" class="checkbox">
+                            <input id="MyCheckbox" type="checkbox" name="find" value="Online Forum">
+                            Online Forum</label>
+                        </div>
+                        <div>
+                            <label for="MyCheckbox" class="checkbox">
+                            <input id="MyCheckbox" type="checkbox" name="find" value="group meetups">
+                            Group Meetups</label>
+                        </div>
+                        <div>
+                            <label for="MyCheckbox" class="checkbox">
+                            <input id="MyCheckbox" type="checkbox" name="find" value="additional resources">
+                            Additional Resources</label>
+                        </div>
+                       <div>
+                        <label for="MyCheckbox" class="checkbox">
+                            <input id="MyCheckbox" type="checkbox" name="find" value="referrals">
+                            Referrals</label>
+                       </div>
+                    </div>
+                    <!--Text area for suggestions -->
+                    <div class="inquire">
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="message" id="" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                   <!--Submit button-->
+                    <div class="inquire">
+                    <button type="submit" class="buttonOne" id="submit">Submit</button>
+                    </div>
+                  
+                </form>
+           
+        </body>
+</html>
